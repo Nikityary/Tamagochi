@@ -1,0 +1,24 @@
+﻿<Window x:Class="Tamagochi.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tamagochi"
+        mc:Ignorable="d"
+        Title="Window1" Height="329" Width="650" ResizeMode="CanMinimize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Выберете питомца" HorizontalAlignment="Center" Margin="0,109,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Comic Sans MS" Height="35" Width="174" HorizontalContentAlignment="Center"/>
+        <Button x:Name="bt1" Content="Собака" HorizontalAlignment="Center" Margin="0,160,0,0" VerticalAlignment="Top" Click="bt1_Click" Height="33" Width="74" FontSize="18" FontFamily="Comic Sans MS"/>
+        <Button x:Name="bt2" Content="Танк" HorizontalAlignment="Center" Margin="0,202,0,0" VerticalAlignment="Top" Click="bt2_Click" Height="33" Width="74" FontFamily="Comic Sans MS" FontSize="16"/>
+        <TextBox x:Name="Pet_Name" HorizontalAlignment="Left" Margin="18,62,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="597" Height="36" FontSize="18" FontFamily="Comic Sans MS" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.ColumnSpan="2"/>
+        <Label Content="Назовите питомца" HorizontalAlignment="Left" Margin="239,22,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Comic Sans MS" Grid.ColumnSpan="2" Height="35" Width="172"/>
+        <Label Content="Выберете сложность" HorizontalAlignment="Center" Margin="0,109,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Comic Sans MS" Height="35" Width="213" Grid.Column="1" HorizontalContentAlignment="Center"/>
+        <Slider x:Name="dif_sl" Grid.Column="1" TickFrequency="5" IsSnapToTickEnabled="True" HorizontalAlignment="Center" Margin="0,149,0,0" VerticalAlignment="Top" Width="120" ValueChanged="dif_sl_ValueChanged"/>
+        <Label x:Name="Dif_lvl" Grid.Column="1" HorizontalAlignment="Center" Margin="0,174,0,0" VerticalAlignment="Top" Content="Легко" FontSize="20" FontFamily="Comic Sans MS" Width="305" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
+    </Grid>
+</Window>

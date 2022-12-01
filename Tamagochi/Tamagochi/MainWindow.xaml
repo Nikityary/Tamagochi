@@ -1,0 +1,26 @@
+﻿<Window x:Class="Tamagochi.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tamagochi"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" ResizeMode="CanMinimize" >
+    <Grid>
+        <Image x:Name="img" HorizontalAlignment="Left" Height="220" Margin="32,134,0,0" VerticalAlignment="Top" Width="220" Stretch="None" MaxWidth="220" MaxHeight="220" MinHeight="220" MinWidth="225" StretchDirection="DownOnly" ClipToBounds="True"/>
+        <Label x:Name="Pet_Name" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Height="60" Width="755" Margin="10,0,0,0" VerticalContentAlignment="Center" FontSize="36" FontFamily="Comic Sans MS"/>
+        <ProgressBar x:Name="sleep" HorizontalAlignment="Left" Height="20" Margin="315,134,0,0" VerticalAlignment="Top" Width="450" Foreground="#FF5A3E3B" Value="5"/>
+        <ProgressBar x:Name="food" HorizontalAlignment="Left" Height="20" Margin="315,186,0,0" VerticalAlignment="Top" Width="450" Value="85" Foreground="#FFDC852D"/>
+        <ProgressBar x:Name="happy" HorizontalAlignment="Left" Height="20" Margin="315,238,0,0" VerticalAlignment="Top" Width="450" Value="60" Foreground="#FF08AAFF"/>
+        <Label Content="Усталость" HorizontalAlignment="Left" Margin="315,102,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Comic Sans MS" Width="156"/>
+        <Label Content="Сытость" HorizontalAlignment="Left" Margin="315,154,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Comic Sans MS" Width="130"/>
+        <Label Content="Счастье" HorizontalAlignment="Left" Margin="315,206,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Comic Sans MS" Width="123"/>
+        <Button x:Name="Give_food" IsEnabled="False" Content="Покормить" HorizontalAlignment="Left" Margin="484,278,0,0" VerticalAlignment="Top" Width="112" Height="30" FontSize="14" FontFamily="Comic Sans MS" Click="Give_food_Click"/>
+        <Button x:Name="Sleep" IsEnabled="False" Content="Спать" HorizontalAlignment="Left" Margin="315,278,0,0" VerticalAlignment="Top" Width="112" Height="30" FontSize="14" FontFamily="Comic Sans MS" Click="Sleep_Click"/>
+        <Button x:Name="Play" IsEnabled="False" Content="Играть" HorizontalAlignment="Left" Margin="653,278,0,0" VerticalAlignment="Top" Width="112" Height="30" FontSize="14" FontFamily="Comic Sans MS" Click="Play_Click"/>
+        <Label x:Name="Pet_Type" HorizontalAlignment="Left" Margin="10,65,0,0" VerticalAlignment="Top" Height="37" Width="755" FontSize="18" FontFamily="Comic Sans MS" VerticalContentAlignment="Center"/>
+        <Button x:Name="Heal" IsEnabled="False" Foreground="Black" Content="Вылечить" HorizontalAlignment="Left" Margin="484,336,0,0" VerticalAlignment="Top" Width="112" Height="30" FontSize="14" FontFamily="Comic Sans MS" Click="Heal_Click"/>
+        <Label x:Name="bints" Content="" HorizontalAlignment="Left" Margin="601,335,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Comic Sans MS" Width="123"/>
+
+    </Grid>
+</Window>
